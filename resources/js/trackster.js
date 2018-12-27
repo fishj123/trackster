@@ -11,7 +11,23 @@ var Trackster = {};
   Append each "row" to the container in the body to display all tracks. 
 */
 Trackster.renderTracks = function(tracks) {
-
+  for (trackIndex = 0; trackIndex < tracks.length(); trackIndex++) {
+    var track = tracks[trackIndex];
+    var htmlTrackRow = 
+    
+  ' <div class="row track"> ' +
+   '  <a class="col-xs-1 col-xs-offset-1" href="https://www.youtube.com/watch?v=eI_O5_tJ1hA&feature=youtu.be" target="_blank">' + 
+   '  <i class="far fa-play-circle play-button"></i></a>' +
+   '  <span id="testing" class="col-xs-4">Fairytale in the Supermarket</span>' +
+   '  <span class="col-xs-2">The Raincoats</span>' +
+   '  <span class="col-xs-2">The Raincoats</span>' +
+   '  <span class="col-xs-2">101,839</span>' +
+  ' </div>';
+    
+    var $trackList = $('#tracklist');
+    console.log('hello world');
+    $trackList.append(htmlTrackRow);
+  }
 };
 
 /*
@@ -33,5 +49,6 @@ $(document).ready(function () {
 
   $('#search').click(function () {
     Trackster.searchTracksByTitle($('#input').val());
+    Trackster.renderTracks();
     });
   });
