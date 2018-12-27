@@ -1,0 +1,51 @@
+/*
+  Custom styles for Trackster App
+*/
+
+
+#logo {
+  font-family: righteous;
+  font-size: 2.5rem;
+  color: rgb(255, 0, 171);
+  padding-left: 15rem;
+}
+
+.header {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+  display: block;
+  background-color: rgb(35, 2, 63);
+  
+}
+
+input {
+  border-radius: 19px;
+  border: 1px solid initial;
+  position: relative;
+  top: 0.5rem;
+  color: rgb(191, 191, 191);
+}
+
+i {
+  position: relative;
+  top: 0.5rem;
+  background-color: rgb(255, 102, 204);
+  padding: 0.5rem;
+  display: inline-block;
+  width: 5% !important;
+  text-align: center;
+  border-radius: 19px;
+  margin-left: 2%;
+}
+
+
+#song {
+ padding-left: 20rem;
+}
+
+.headings {
+  padding: 0.5rem 0;
+  background-color: rgb(104, 0, 255);
+  color: rgb(255, 255, 255);
+}
+
